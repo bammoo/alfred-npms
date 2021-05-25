@@ -21,7 +21,7 @@ const q = /boost-exact:[^\s]+/.test(alfy.input) ? alfy.input : `${alfy.input} bo
 			return {
 				title: pkg.name,
 				subtitle: pkg.description,
-				arg: pkg.links.repository || pkg.links.npm,
+				arg: pkg.links.npm || pkg.links.repository,
 				mods: {
 					alt: {
 						arg: pkg.links.npm,
